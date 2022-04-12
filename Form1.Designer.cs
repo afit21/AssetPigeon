@@ -36,18 +36,18 @@ namespace PigeonAssetManager
             this.panel1 = new System.Windows.Forms.Panel();
             this.Alertslabel = new System.Windows.Forms.Label();
             this.statsPanel = new System.Windows.Forms.Panel();
-            this.AssetCountPanel = new System.Windows.Forms.Panel();
-            this.AssetCountLabel = new System.Windows.Forms.Label();
-            this.CountLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.AssetCountPanel = new System.Windows.Forms.Panel();
+            this.CountLabel = new System.Windows.Forms.Label();
+            this.AssetCountLabel = new System.Windows.Forms.Label();
             this.LeftBar.SuspendLayout();
             this.AlertsPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statsPanel.SuspendLayout();
-            this.AssetCountPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.AssetCountPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LeftBar
@@ -138,51 +138,6 @@ namespace PigeonAssetManager
             this.statsPanel.Size = new System.Drawing.Size(681, 683);
             this.statsPanel.TabIndex = 2;
             // 
-            // AssetCountPanel
-            // 
-            this.AssetCountPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AssetCountPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AssetCountPanel.BackColor = System.Drawing.Color.MintCream;
-            this.AssetCountPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AssetCountPanel.Controls.Add(this.CountLabel);
-            this.AssetCountPanel.Controls.Add(this.AssetCountLabel);
-            this.AssetCountPanel.Location = new System.Drawing.Point(3, 3);
-            this.AssetCountPanel.MaximumSize = new System.Drawing.Size(200, 200);
-            this.AssetCountPanel.MinimumSize = new System.Drawing.Size(200, 200);
-            this.AssetCountPanel.Name = "AssetCountPanel";
-            this.AssetCountPanel.Size = new System.Drawing.Size(200, 200);
-            this.AssetCountPanel.TabIndex = 0;
-            // 
-            // AssetCountLabel
-            // 
-            this.AssetCountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AssetCountLabel.AutoSize = true;
-            this.AssetCountLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AssetCountLabel.Location = new System.Drawing.Point(43, 145);
-            this.AssetCountLabel.Name = "AssetCountLabel";
-            this.AssetCountLabel.Size = new System.Drawing.Size(115, 42);
-            this.AssetCountLabel.TabIndex = 0;
-            this.AssetCountLabel.Text = "_______________\r\nAssets Owned";
-            this.AssetCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CountLabel
-            // 
-            this.CountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CountLabel.BackColor = System.Drawing.Color.Transparent;
-            this.CountLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CountLabel.Location = new System.Drawing.Point(30, 59);
-            this.CountLabel.Name = "CountLabel";
-            this.CountLabel.Size = new System.Drawing.Size(140, 59);
-            this.CountLabel.TabIndex = 1;
-            this.CountLabel.Text = "0";
-            this.CountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -228,6 +183,51 @@ namespace PigeonAssetManager
             this.label2.Text = "_______________\r\nAssets Owned";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // AssetCountPanel
+            // 
+            this.AssetCountPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AssetCountPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AssetCountPanel.BackColor = System.Drawing.Color.MintCream;
+            this.AssetCountPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AssetCountPanel.Controls.Add(this.CountLabel);
+            this.AssetCountPanel.Controls.Add(this.AssetCountLabel);
+            this.AssetCountPanel.Location = new System.Drawing.Point(3, 3);
+            this.AssetCountPanel.MaximumSize = new System.Drawing.Size(200, 200);
+            this.AssetCountPanel.MinimumSize = new System.Drawing.Size(200, 200);
+            this.AssetCountPanel.Name = "AssetCountPanel";
+            this.AssetCountPanel.Size = new System.Drawing.Size(200, 200);
+            this.AssetCountPanel.TabIndex = 0;
+            // 
+            // CountLabel
+            // 
+            this.CountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CountLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CountLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CountLabel.Location = new System.Drawing.Point(30, 59);
+            this.CountLabel.Name = "CountLabel";
+            this.CountLabel.Size = new System.Drawing.Size(140, 59);
+            this.CountLabel.TabIndex = 1;
+            this.CountLabel.Text = "0";
+            this.CountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // AssetCountLabel
+            // 
+            this.AssetCountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AssetCountLabel.AutoSize = true;
+            this.AssetCountLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AssetCountLabel.Location = new System.Drawing.Point(43, 145);
+            this.AssetCountLabel.Name = "AssetCountLabel";
+            this.AssetCountLabel.Size = new System.Drawing.Size(115, 42);
+            this.AssetCountLabel.TabIndex = 0;
+            this.AssetCountLabel.Text = "_______________\r\nAssets Owned";
+            this.AssetCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -245,10 +245,10 @@ namespace PigeonAssetManager
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statsPanel.ResumeLayout(false);
-            this.AssetCountPanel.ResumeLayout(false);
-            this.AssetCountPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.AssetCountPanel.ResumeLayout(false);
+            this.AssetCountPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
